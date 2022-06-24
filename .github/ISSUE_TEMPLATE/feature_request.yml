@@ -1,0 +1,45 @@
+---
+name: Feature request
+description: Request a feature
+title: '[Request]: '
+
+body:
+  - type: markdown
+    attributes:
+      value: '## Creating a feature request'
+  - type: markdown
+    attributes:
+      value: |
+        This form should be used to create new feature requests. 
+        
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the feature you are requesting.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Explain why this feature is needed.
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: Write a list of what you want this feature to do.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Are you planning to do it yourself in a pull request?
+      options:
+        - label: Yes/No
+          required: false
