@@ -1,7 +1,8 @@
 ---
 name: New task
-description: Create a new work task
+description: Create a new work task.
 title: '[Task]: '
+labels: [ 'task' ]
 
 body:
   - type: markdown
@@ -15,26 +16,26 @@ body:
   - type: textarea
     id: description
     attributes:
-        label: Task description
-        description: Describe the task that needs to be completed.
+      label: Task description
+      description: Describe the task that needs to be completed.
     validations:
-        required: true
+      required: true
 
   - type: textarea
     id: requirements
     attributes:
-        label: Requirements
-        description: What are the requirements for this task, this could be a checklist of subtasks.
+      label: Requirements
+      description: What are the requirements for this task, this could be a checklist of subtasks.
     validations:
-        required: true
+      required: true
 
   - type: textarea
     id: acceptance_criteria
     attributes:
-        label: Acceptance criteria
-        description: What is the criteria for this task to be marked as done? This will help anyone approving any PRs related to this task.
+      label: Acceptance criteria
+      description: What is the criteria for this task to be marked as done? This will help anyone approving any PRs related to this task.
     validations:
-        required: true
+      required: true
 
   - type: markdown
     attributes:

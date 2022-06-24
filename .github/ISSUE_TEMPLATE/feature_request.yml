@@ -2,6 +2,7 @@
 name: Feature request
 description: Request a feature
 title: '[Request]: '
+labels: [ 'request' ]
 
 body:
   - type: markdown
@@ -11,7 +12,7 @@ body:
     attributes:
       value: |
         This form should be used to create new feature requests. 
-        
+
   - type: textarea
     id: description
     attributes:
